@@ -1,0 +1,104 @@
+body {
+  background-color: wheat;
+}
+input {
+  pointer-events: none;
+  visibility: hidden;
+}
+.slider {
+  width: 1100px;
+  height: 600px;
+  overflow: hidden;
+  border: 5px black solid;
+}
+.middle {
+  margin: 0 auto;
+}
+.slides {
+  width: 800%;
+  height: 90%;
+  display: flex;
+}
+.slide {
+  width: 12.5%;
+  height: 100%;
+  transition: all 0.6s ease;
+}
+.slide img {
+  width: 100%;
+  height: 100%;
+}
+.slide:nth-child(1) {
+  background: url(img/1.jpeg) center center/contain no-repeat;
+  background-color: lightblue;
+}
+.slide:nth-child(2) {
+  background: url(img/2.jpeg) center center/contain no-repeat;
+  background-color: lightcoral;
+}
+.slide:nth-child(3) {
+  background: url(img/3.jpeg) center center/contain no-repeat;
+  background-color: lightcyan;
+}
+.slide:nth-child(4) {
+  background: url(img/4.jpeg) center center/contain no-repeat;
+  background-color: lightgreen;
+}
+.slide:nth-child(5) {
+  background: url(img/5.jpeg) center center/contain no-repeat;
+  background-color: lightpink;
+}
+.slide:nth-child(6) {
+  background: url(img/6.jpeg) center center/contain no-repeat;
+  background-color: lightsalmon;
+}
+.slide:nth-child(7) {
+  background: url(img/1.jpeg) center center/contain no-repeat;
+  background-color: lightgreen;
+}
+.slide:nth-child(8) {
+  background: url(img/2.jpeg) center center/contain no-repeat;
+  background-color: lightcyan;
+}
+.labels {
+  display: flex;
+  justify-content: center;
+  column-gap: 10px;
+  margin-top: 20px;
+}
+label div{
+  width: 26px;
+  height: 26px;
+  border-radius: 50%;
+  cursor: pointer;
+  background-color: #fff;
+  transition: all 0.4s ease;
+}
+label div:hover {
+  background-color: red;
+  transform: scale(1.1);
+}
+#pagi1:checked~.slider .slides .slide1 {
+  margin-left: 0;
+}
+#pagi2:checked~.slider .slides .slide1 {
+  margin-left: -12.5%;
+}
+#pagi3:checked~.slider .slides .slide1 {
+  margin-left: -25%;
+}
+#pagi4:checked~.slider .slides .slide1 {
+  margin-left: -37.5%;
+}
+#pagi5:checked~.slider .slides .slide1 {
+  margin-left: -50%;
+}
+#pagi6:checked~.slider .slides .slide1 {
+  margin-left: -62.5%;
+}
+#pagi7:checked~.slider .slides .slide1 {
+  margin-left: -75%;
+}
+#pagi8:checked~.slider .slides .slide1 {
+  margin-left: -87.5%;
+}
