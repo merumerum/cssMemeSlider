@@ -16,7 +16,7 @@ input {
 }
 .slides {
   width: 800%;
-  height: 90%;
+  height: 82%;
   display: flex;
 }
 .slide {
@@ -60,13 +60,24 @@ input {
   background: url(img/2.jpeg) center center/contain no-repeat;
   background-color: lightcyan;
 }
+.subtitles {
+  display: flex;
+  width: 800%;
+}
+.subtitle {
+  width: 12.5%;
+  font-size: 20px;
+  margin-top: 10px;
+  transition: all 0.6s ease;
+}
 .labels {
   display: flex;
   justify-content: center;
   column-gap: 10px;
   margin-top: 20px;
 }
-label div{
+label {
+  display: block;
   width: 26px;
   height: 26px;
   border-radius: 50%;
@@ -74,31 +85,66 @@ label div{
   background-color: #fff;
   transition: all 0.4s ease;
 }
-label div:hover {
+label:hover {
+  background-color: red;
+  transform: scale(1.1);
+}
+#pagi1:checked ~ .slider .labels .label1,
+#pagi2:checked ~ .slider .labels .label2,
+#pagi3:checked ~ .slider .labels .label3,
+#pagi4:checked ~ .slider .labels .label4,
+#pagi5:checked ~ .slider .labels .label5,
+#pagi6:checked ~ .slider .labels .label6,
+#pagi7:checked ~ .slider .labels .label7,
+#pagi8:checked ~ .slider .labels .label8 {
   background-color: red;
   transform: scale(1.1);
 }
 #pagi1:checked~.slider .slides .slide1 {
   margin-left: 0;
 }
+#pagi1:checked~.slider .subtitles .subtitle1 {
+  margin-left: 0;
+}
 #pagi2:checked~.slider .slides .slide1 {
+  margin-left: -12.5%;
+}
+#pagi2:checked~.slider .subtitles .subtitle1 {
   margin-left: -12.5%;
 }
 #pagi3:checked~.slider .slides .slide1 {
   margin-left: -25%;
 }
+#pagi3:checked~.slider .subtitles .subtitle1 {
+  margin-left: -25%;
+}
 #pagi4:checked~.slider .slides .slide1 {
+  margin-left: -37.5%;
+}
+#pagi4:checked~.slider .subtitles .subtitle1 {
   margin-left: -37.5%;
 }
 #pagi5:checked~.slider .slides .slide1 {
   margin-left: -50%;
 }
+#pagi5:checked~.slider .subtitles .subtitle1 {
+  margin-left: -50%;
+}
 #pagi6:checked~.slider .slides .slide1 {
+  margin-left: -62.5%;
+}
+#pagi6:checked~.slider .subtitles .subtitle1  {
   margin-left: -62.5%;
 }
 #pagi7:checked~.slider .slides .slide1 {
   margin-left: -75%;
 }
+#pagi7:checked~.slider .subtitles .subtitle1 {
+  margin-left: -75%;
+}
 #pagi8:checked~.slider .slides .slide1 {
+  margin-left: -87.5%;
+}
+#pagi8:checked~.slider .subtitles .subtitle1 {
   margin-left: -87.5%;
 }
