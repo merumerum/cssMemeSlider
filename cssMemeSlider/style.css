@@ -1,15 +1,23 @@
+@import url('https://fonts.googleapis.com/css2?family=Rampart+One&family=Shantell+Sans&family=Yeseva+One&display=swap');
+
 body {
-  background-color: wheat;
+ background: url('img/bg3.gif');
+ font-family: 'Rampart One', cursive;
+ color: #fff;
 }
 input {
   pointer-events: none;
   visibility: hidden;
 }
+h1 {
+  text-align: center;
+  font-size: 2.2rem;
+}
 .slider {
-  width: 1100px;
-  height: 600px;
+  width: 55vw;
+  height: 78vh;
   overflow: hidden;
-  border: 5px black solid;
+  border: 0.3rem rgba(0,49,83) solid;
 }
 .middle {
   margin: 0 auto;
@@ -18,6 +26,7 @@ input {
   width: 800%;
   height: 82%;
   display: flex;
+  background-color: rgba(66,133,180, 0.4);
 }
 .slide {
   width: 12.5%;
@@ -30,35 +39,27 @@ input {
 }
 .slide:nth-child(1) {
   background: url(img/1.jpeg) center center/contain no-repeat;
-  background-color: lightblue;
 }
 .slide:nth-child(2) {
   background: url(img/2.jpeg) center center/contain no-repeat;
-  background-color: lightcoral;
 }
 .slide:nth-child(3) {
   background: url(img/3.jpeg) center center/contain no-repeat;
-  background-color: lightcyan;
 }
 .slide:nth-child(4) {
   background: url(img/4.jpeg) center center/contain no-repeat;
-  background-color: lightgreen;
 }
 .slide:nth-child(5) {
   background: url(img/5.jpeg) center center/contain no-repeat;
-  background-color: lightpink;
 }
 .slide:nth-child(6) {
   background: url(img/6.jpeg) center center/contain no-repeat;
-  background-color: lightsalmon;
 }
 .slide:nth-child(7) {
-  background: url(img/1.jpeg) center center/contain no-repeat;
-  background-color: lightgreen;
+  background: url(img/7.jpeg) center center/contain no-repeat;
 }
 .slide:nth-child(8) {
-  background: url(img/2.jpeg) center center/contain no-repeat;
-  background-color: lightcyan;
+  background: url(img/8.jpeg) center center/contain no-repeat;
 }
 .subtitles {
   display: flex;
@@ -66,7 +67,7 @@ input {
 }
 .subtitle {
   width: 12.5%;
-  font-size: 20px;
+  font-size: 1.5rem;
   margin-top: 10px;
   transition: all 0.6s ease;
 }
@@ -98,6 +99,7 @@ label:hover {
 #pagi7:checked ~ .slider .labels .label7,
 #pagi8:checked ~ .slider .labels .label8 {
   background-color: red;
+  cursor:auto;
   transform: scale(1.1);
 }
 #pagi1:checked~.slider .slides .slide1 {
